@@ -1,0 +1,4 @@
+skip_list:
+#  - '602'
+  - '305' # ignore 'shell' error in tasks/main.yml
+  - '503' # ignore tasks/main.yml errors:  Tasks that run when changed should likely be handlers

@@ -4,7 +4,7 @@ galaxy_info:
   description: Install Zint and (its build requirements) from source
   company: Acro Media Inc.
   license: GPLv3
-  min_ansible_version: 2.0
+  min_ansible_version: 2.9
   platforms:
   - name: Ubuntu
     versions:

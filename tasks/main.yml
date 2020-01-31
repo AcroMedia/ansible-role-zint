@@ -1,4 +1,9 @@
 ---
+- debug:
+    msg:
+      - "zint_version     {{ zint_version }}"
+
+# @todo: fix error: DEPRICATION WARNING: Invoking "apt" only once while using a loop
 - name: Install Zint pre-requisites
   apt:
     name: "{{ item }}"

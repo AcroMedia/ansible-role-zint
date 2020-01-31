@@ -3,6 +3,32 @@
 - Install Zint's build prerequisites
 - Build and Install Zint from source on Ubuntu
 
+## Molecule Setup
+
+- refer to setup instructions for basic test running: [molecule-setup](https://git.acromedia.com/mmccann/molecule-setup/blob/master/README.md)
+- after setting up your virtual environment and installing dependencies ...
+
+```bash
+$ MOLECULE_DISTRO=ubuntu1604 molecule test --destroy=never
+```
+
+- log into the container and view changes
+
+```bash
+$ molecule login
+```
+
+__Variations of MOLECULE_DISTRO__ 
+
+    ubuntu1604
+    ubuntu1804
+
+__running the full test suite__
+
+```bash
+$ tox
+```
+
 ## Requirements
 
 * Ubuntu LTS (14.04 or newer)
